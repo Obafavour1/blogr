@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --lightred: hsl(356, 100%, 66%);
+    --verylightred: hsl(355, 100%, 74%);
+    --verdarkblue: hsl(208, 49%, 24%);
+
+    --grayishblue: hsl(240, 2%, 79%);
+    --verydarkgrayishblue: hsl(207, 13%, 34%);
+    --verydarkblackblue: hsl(240, 10%, 16%);
+}
+
+.main-container{
+    max-width: 1440px;
+    line-height: 26px;
+    font-size: 18px;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-10%);
+    transition: all .5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: hsl(207, 13%, 34%);
+    font-family: 'Overpass', 'sans';
+}
+
+.header{
+    color: var(--verdarkblue);
+}
+
+h1{
+    color: white;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+h2, h3, h4{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu{
+    display: none;
+}
+
+.openmenu{
+    display: none;
+}
+
+.closemenu{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 140px;
+    /* padding-right: 10%; */
+    color: var(--grayishblue);
+    position: absolute;
+    width: 90vw;
+    margin-top: 50px;
+}
+
+nav a{
+    color: var(--verdarkblue);
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: var(--grayishblue);
+    font-weight: 500;
+}
+
+h4{
+    color: var(--verdarkblue);
+}
+
+.nav-inner-item{
+    position: absolute;
+    width: 200px;
+    margin-left: -20px;
+    min-height: 150px;
+    border-radius: 10px;
+    padding: 30px 30px 0px 30px;
+    background-color: white;
+    display: none;
+    /* text-align: center; */
+}
+
+.nav-inner-item li{
+    margin-bottom: 10px;
+}
+
+.product:hover .nav-inner-item{
+     display: block;
+}
+
+
+.nav-item{
+    margin-left: 60px;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+
+
+.sign{
+    padding: 12px 24px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: var(--lightred);
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.sign:hover{
+    color: whitesmoke;
+    background-color: var(--verylightred);
+}
+
+.btn{
+    width: 600px;
+    margin-top: 50px;
+}
+
+.start{
+    color: var(--lightred);
+    padding: 12px 15px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+.start:hover{
+    color:  white;
+    background-color:var(--verylightred);
+}
+
+.learn{
+    border: 1px solid hsl(240, 2%, 79%);
+    border-radius: 50px;
+    padding: 12px 15px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.learn:hover{
+    color:  var(--verylightred);
+    background-color:white;
+}
+
+
+.flex{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+
+/* hamburger menu */
+
+.sign-up{
+    padding: 8px 12px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: white;
+    background: radial-gradient(hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+    margin-top: 20px;
+}
+
+
+
+
+/* showcase section */
+#showcase{
+    text-align: center;
+    background: url(/images/bg-pattern-intro-desktop.svg) no-repeat center ;
+    background-size: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-weight: 700;
+    border-radius: 0 0 0 100px;
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+
+
+#showcase h2{
+    font-size: 54px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+#showcase p{
+    font-size: 20px;
+    color: white;
+}
+
+/* future section */
+#future{
+    min-height: 400px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+    /* background-color: blue; */
+}
+
+
+.future-text{
+    margin-top: 100px;
+    padding: 0 5%;
+
+}
+
+.future-header{
+    text-align: center;
+    font-size: 36px;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.first-text p, .second-text p{
+    width: 88%;
+}
+
+.first-text{
+    margin-top: 80px;
+}
+
+.second-text{
+    margin-top: 30px;
+}
+
+.future-mobile-img{
+    display: none;
+}
+
+.future-img{
+    width: 60vw;
+    margin-right: -220px;
+}
+
+/* art section */
+#art{
+    background-color: var(--verydarkblackblue);
+    border-radius: 0 100px 0 100px;
+    min-height: 400px;
+    width: 100vw;
+}
+
+
+.art-text{
+    width: 35%;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.art-text p{
+    color: var(--grayishblue);
+}
+
+.art-text h3{
+    font-size: 38px;
+    margin-bottom: 30px;
+    line-height: 2rem;
+    color: white;
+}
+
+.art-img{
+    margin-top: -70px;
+    margin-left: 10%;
+}
+
+/* tooling section */
+#tooling{
+    min-height: 400px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.tooling{
+    justify-content: space-between;
+    width: 90%;
+}
+
+.tooling-text{
+    padding: 0 5%;
+    width: 42%;
+    margin-top: 80px;
+}
+
+.tooling-mobile-img{
+    display: none;
+}
+
+.tooling-img{
+    margin-left: -190px;
+    width: 60vw;
+}
+
+/* footer section */
+footer{
+    display: flex;
+    padding-top: 50px;
+    background-color: var(--verydarkblackblue);
+    padding-left: 140px;
+    border-radius: 0 100px 0 0;
+    width: 100vw;
+    min-height: 300px;
+}
+
+footer h1{
+    color: white;
+}
+
+.footer-list ul li a{
+    color: var(--grayishblue);
+    transition: all 0.1s ease-in;
+}
+
+.footer-list ul li a:hover{
+    /* color: var(--lightred); */
+    border-bottom: 1px solid white;
+}
+
+.footer-list{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.footer-list ul li:first-child{
+    margin-bottom: 25px;
+}
+
+.footer-list ul li{
+    margin-bottom: 10px;
+}
+
+.bold{
+    color: white;
+}
+
+
+
+
+
+
+
